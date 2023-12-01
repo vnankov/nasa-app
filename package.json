@@ -1,0 +1,27 @@
+{
+  "name": "nasa-project",
+  "version": "1.0.0",
+  "description": "I. Server side project\r 1. Create Server powered by NodeJS and express.\r  - init the server by server.js file\r  - create package.json file and install dependencies\r 2. Create basic structure to distribute the system like - routes/models/controllers\r 3. Work on the data management \r   - Download csv file from Nasa, to be used as data payload.\r   - Create a model to parse all habitable planets and await for their load",
+  "main": "index.js",
+  "scripts": {
+    "install-server": "npm i --prefix server",
+    "install-client": "npm i --prefix client",
+    "install": "npm run install-server && npm run install client",
+    "server": "npm run watch --prefix server",
+    "client": "npm start --prefix client",
+    "watch": "npm run server & npm run client",
+    "deploy": "npm run build --prefix client && npm start --prefix server",
+    "deploy-cluster": "npm run build --prefix client && npm run cluster --prefix server",
+    "test": "npm test --prefix server && npm test --prefix client"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.7.0",
+    "prettier": "^2.5.1"
+  },
+  "dependencies": {
+    "axios": "^1.6.0"
+  }
+}
