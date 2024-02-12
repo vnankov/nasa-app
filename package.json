@@ -4,9 +4,9 @@
   "description": "I. Server side project\r 1. Create Server powered by NodeJS and express.\r  - init the server by server.js file\r  - create package.json file and install dependencies\r 2. Create basic structure to distribute the system like - routes/models/controllers\r 3. Work on the data management \r   - Download csv file from Nasa, to be used as data payload.\r   - Create a model to parse all habitable planets and await for their load",
   "main": "index.js",
   "scripts": {
-    "install-server": "npm i --prefix server",
-    "install-client": "npm i --prefix client",
-    "install": "npm run install-server && npm run install client",
+    "install-server": "cd server && npm i",
+    "install-client": "cd client && npm i",
+    "install": "npm run install-server && npm run install-client",
     "server": "npm run watch --prefix server",
     "client": "npm start --prefix client",
     "watch": "npm run server & npm run client",
