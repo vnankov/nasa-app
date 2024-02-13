@@ -36,9 +36,12 @@ II. **Client-side project**
 5. Create API for launching a mission to a given planet
 6. Create API to delete scheduled missions
 
-II. **Database project**
+III. **Database project**
 1. Create a new cloud database called nasa-api
 2. Create a user for this database to be connected
 3. Connect to the database from the server
 4. Populate the data in the server from the database
 
+IV. **Create CI/CD using GitHub actions**
+1. Create a new repository on GitHub https://github.com/vnankov/nasa-app
+2. Create GitHub actions to build the entire project
